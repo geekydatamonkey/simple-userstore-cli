@@ -3,11 +3,11 @@
 Manage users within a [Simple UserStore](https://github.com/geekydatamonkey/simple-userstore) from the command
 line.
 
-- [ ] List all users
-- [ ] Create a new user
-- [ ] Change a user's password
-- [ ] Change a users's username
-- [ ] Remove a user
+- [x] List all users
+- [x] Create a new user
+- [x] Change a user's password
+- [x] Change a users's username
+- [x] Remove a user
 
 ## Installation
 

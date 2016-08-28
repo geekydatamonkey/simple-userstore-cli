@@ -1,14 +1,18 @@
 import inquirer from 'inquirer';
+import { printFailure, printSuccess } from './helpers';
 
-export default function loadDatabase(userstore) {
-  return inquirer.prompt({
+export default async function loadDatabase(userstore) {
+  const { filename } = await inquirer.prompt({
     type: 'input',
     name: 'filename',
     message: 'Path to the database file?',
     default: 'db/users.db',
-  })
-  .then(({ filename }) => {
-    return userstore.load(filename);
-  })
-  .catch(console.error);
+  });
+
+  try {
+    await userstore.load(filename);
+  } catch (err) {
+    printFailure(`Cannot load database from '${filename}'. ${err.message}`);
+  }
+  printSuccess(`UserStore loaded from '${filename}'.`);
 }
