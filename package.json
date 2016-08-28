@@ -34,7 +34,7 @@
     "eslint-config-airbnb-base": "^5.0.2",
     "eslint-plugin-import": "^1.13.0",
     "nodemon": "^1.10.0",
-    "semantic-release": "^4.3.5",
+    "semantic-release": "^4.3.5"
   },
   "babel": {
     "presets": [
@@ -69,3 +69,4 @@
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
   }
+}
