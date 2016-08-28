@@ -51,7 +51,10 @@ function promptForAction(userstore) {
         return null;
     }
   })
-  .then(promptForAction)
+  .then(() => {
+    // return to main menu
+    return promptForAction(userstore);
+  })
   .catch(console.error);
 }
 

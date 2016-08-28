@@ -18,6 +18,7 @@
   "author": "James Johnson <johnsojr@gmail.com> (http://james.mn/)",
   "license": "MIT",
   "dependencies": {
+    "cli-table": "^0.3.1",
     "inquirer": "^1.1.2",
     "simple-userstore": "^1.0.1"
   },

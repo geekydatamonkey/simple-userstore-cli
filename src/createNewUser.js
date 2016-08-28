@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 
-export default function createNewUser(userstore) {
-  return inquirer.prompt([{
+export default async function createNewUser(userstore) {
+  const { username, password } = await inquirer.prompt([{
     name: 'username',
     type: 'input',
     message: 'Username?',
@@ -9,9 +9,15 @@ export default function createNewUser(userstore) {
     name: 'password',
     type: 'password',
     message: 'Password?',
-  }])
-  .then(({ username, password }) => {
-    console.log(`username: ${username}, password: ${password}`);
-  })
-  .catch(console.error);
+  }]);
+
+  try {
+    await userstore.createUser({ username, password });
+  } catch (err) {
+    // username exists
+    console.error(`Sorry. A user with username '${username}' already exists`);
+    console.error(err);
+  }
+
+  console.log(`Created new user '${username}'`);
 }
