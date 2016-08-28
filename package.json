@@ -10,7 +10,7 @@
     "prebuild": "rm -rf dist && mkdir dist",
     "build": "babel src/index.js -o dist/index.js",
     "commit": "git-cz",
-    "start": "nodemon ./src/cli.js --exec babel-node",
+    "start": "babel-node ./src/cli.js",
     "test": "eslint src/**/*.js test/**/*.js && ava ",
     "test:watch": "ava --watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
@@ -18,6 +18,8 @@
   "author": "James Johnson <johnsojr@gmail.com> (http://james.mn/)",
   "license": "MIT",
   "dependencies": {
+    "inquirer": "^1.1.2",
+    "simple-userstore": "^1.0.1"
   },
   "devDependencies": {
     "ava": "^0.16.0",
@@ -63,7 +65,8 @@
         "always"
       ],
       "no-console": "off",
-      "no-underscore-dangle": "off"
+      "no-underscore-dangle": "off",
+      "generator-star-spacing": "off"
     }
   },
   "czConfig": {
