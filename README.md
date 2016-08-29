@@ -1,4 +1,4 @@
-# Simple UserStore Command Line Interface (CLI)
+# Simple UserStore Command Line Interface (CLI) [![Travis Build](https://img.shields.io/travis/geekydatamonkey/simple-userstore-cli.svg?style=flat)](https://travis-ci.org/geekydatamonkey/simple-userstore-cli) [![NPM Version](https://img.shields.io/npm/v/simple-userstore-cli.svg?style=flat)](https://www.npmjs.com/package/simple-userstore-cli)
 
 Manage users within a [Simple UserStore](https://github.com/geekydatamonkey/simple-userstore) from the command
 line.
