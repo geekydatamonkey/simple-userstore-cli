@@ -1,6 +1,7 @@
 {
   "name": "simple-userstore-cli",
   "description": "CLI for UserStore. Create, update, and delete users.",
+  "version": "0.1.0",
   "bin": {
     "simple-userstore-cli": "dist/cli.js"
   },
