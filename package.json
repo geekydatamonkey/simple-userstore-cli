@@ -1,6 +1,5 @@
 {
   "name": "simple-userstore-cli",
-  "version": "0.1.0",
   "description": "CLI for UserStore. Create, update, and delete users.",
   "bin": {
     "simple-userstore-cli": "dist/cli.js"
@@ -75,5 +74,9 @@
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geekydatamonkey/simple-userstore-cli.git"
   }
 }
