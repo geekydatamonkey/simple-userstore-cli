@@ -9,6 +9,8 @@ line.
 - [x] Change a users's username
 - [x] Remove a user
 
+![Usage Screenshot](./simple-userstore-cli.gif)
+
 ## Installation
 
 ```
